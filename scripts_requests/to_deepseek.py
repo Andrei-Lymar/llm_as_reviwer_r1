@@ -11,7 +11,7 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from openai import OpenAI, APIError, APITimeoutError
 
-API_KEY = '' # Insert your key
+API_KEY = 'sk-4e1282d63faa4f1fa659b714ce19e003' # Insert your key
 BASE_URL = "https://api.deepseek.com"
 MODEL = "deepseek-v4-flash"
 
@@ -142,4 +142,5 @@ def main():
     df.to_excel(output_file, index=False)
     print("Done")
 
-if __name__ == "__main__"
+if __name__ == "__main__":
+     main()
